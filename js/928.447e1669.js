@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunksmart_shopping"]=self["webpackChunksmart_shopping"]||[]).push([[928],{7547:function(n,r,e){e.r(r),e.d(r,{default:function(){return o}});var u=function(){var n=this,r=n._self._c;return r("div",[n._v("我是myorder")])},s=[],t={name:"MyorderIndex"},l=t,a=e(1656),i=(0,a.A)(l,u,s,!1,null,null,null),o=i.exports}}]);
+//# sourceMappingURL=928.447e1669.js.map
