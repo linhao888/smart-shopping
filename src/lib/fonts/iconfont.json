@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "41500889",
+      "name": "mti-搜索",
+      "font_class": "mti-sousuo",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    }
+  ]
+}
