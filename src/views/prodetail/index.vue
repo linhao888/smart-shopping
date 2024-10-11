@@ -1,15 +1,10 @@
 <template>
   <div class="detail-box">
     <!-- nav区域 -->
-    <van-nav-bar
-      title="商品详情"
-      left-text="返回"
-      left-arrow
-      @click-left="$router.go(-1)"
-    />
+    <HeadNavVue></HeadNavVue>
 
     <!-- 底部购物车栏 -->
-    <div class="bottom-nav">
+    <div class="bottom-nav" id="prodetail-bottom-nav">
       <div @click="$router.push('/home')">
         <van-icon name="wap-home-o" size="30px" />
         <span class="title">首页</span>
@@ -129,6 +124,7 @@ import defaultImg from '@/assets/default-avatar.png'
 import CountBoxVue from '@/components/CountBox.vue'
 import { getCartData } from '@/api/cart.js'
 import loginConfirm from '@/mixins/loginConfirm.js'
+import HeadNavVue from '@/components/HeadNav.vue'
 
 export default {
   name: 'ProdetailIndex',
@@ -147,7 +143,8 @@ export default {
     }
   },
   components: {
-    CountBoxVue
+    CountBoxVue,
+    HeadNavVue
   },
   async created () {
     const goodsId = this.$route.params.id
@@ -296,12 +293,20 @@ export default {
     }
   }
   .swipe {
+    ::v-deep .van-swipe__indicators {
+      bottom: 3vh;
+    }
+    ::v-deep .van-swipe__indicator {
+      height: 1.5vh;
+      width: 1.5vh;
+    }
     .my-swipe .van-swipe-item {
       color: #fff;
-      font-size: 20px;
+      font-size: 3vh;
       line-height: 150px;
       text-align: center;
       background-color: #39a9ed;
+
       .swipe-img {
         width: 100%;
         object-fit: cover;
@@ -310,34 +315,36 @@ export default {
     }
   }
   .price {
-    height: 40px;
-    line-height: 40px;
+    height: 5vh;
+    line-height: 5vh;
     .now-price {
       color: red;
-      font-size: 20px;
-      margin-right: 10px;
-      margin-left: 5px;
+      font-size: 4vh;
+      margin-right: 1vh;
+      margin-left: 1vh;
     }
     .pre-price {
       text-decoration-line: line-through;
+      font-size: 2.5vh;
     }
     .sales {
       float: right;
       color: gray;
-      margin-right: 5px;
+      margin-right: 1vh;
+      font-size: 2vh;
       height: 100%;
     }
   }
   .content {
-    font-size: 18px;
+    font-size: 2.5vh;
   }
   .promise {
-    height: 30px;
-    line-height: 30px;
+    height: 6vh;
+    line-height: 6vh;
     background-color: #eee;
-    margin-top: 6px;
+    margin-top: 1vh;
     span {
-      margin: 0 2px;
+      margin: 0 0.5vh;
     }
     .right {
       float: right;
@@ -347,22 +354,22 @@ export default {
     .discuss-nav {
       display: flex;
       justify-content: space-between;
-      padding: 5px;
+      padding: 1vh;
     }
     .items {
-      padding: 5px;
+      padding: 1vh;
       .top {
-        height: 30px;
+        height: 4.5vh;
         img {
-          height: 20px;
+          height: 3vh;
         }
         span {
-          font-size: 18px;
-          margin: 0 5px;
+          font-size: 2.5vh;
+          margin: 0 1vh;
         }
       }
       .bottom {
-        margin-top: 5px;
+        margin-top: 1vh;
         span {
           color: gray;
         }

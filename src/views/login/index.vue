@@ -1,12 +1,7 @@
 <template>
   <div>
     <!-- nav区域 -->
-    <van-nav-bar
-      title="会员登录"
-      left-text="返回"
-      left-arrow
-      @click-left="$router.go(-1)"
-    />
+    <HeadNavVue></HeadNavVue>
     <!-- 内容区域 -->
     <div class="main">
       <!-- 标题 -->
@@ -66,6 +61,8 @@
 <script>
 
 import { getImgCodeApi, getSmsCodeApi, loginApi } from '@/api/login.js'
+import HeadNavVue from '@/components/HeadNav.vue'
+
 export default {
   name: 'LoginIndex',
   data () {
@@ -86,6 +83,9 @@ export default {
       smsBtnState: false, // 获取验证码button禁用属性
       intervalId: null // 验证码计时器
     }
+  },
+  components: {
+    HeadNavVue
   },
   created () {
     this.getImgCode()
@@ -164,12 +164,12 @@ export default {
 
 <style lang="less" scoped>
 .login-title {
-  margin: 30px 0;
-  padding-left: 15px;
+  margin: 4vh 0;
+  padding-left: 1vh;
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 5vh;
   }
   span {
     color: #999;

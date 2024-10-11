@@ -85,21 +85,21 @@ export default {
 <style lang="less" scoped>
 .category-box {
   .header {
-    height: 46px;
+    height: 8vh;
     background-color: rgb(158, 204, 222);
     text-align: center;
-    line-height: 46px;
+    line-height: 8vh;
   }
   .main {
     display: flex;
     .left-nav {
-      height: 523px;
-      width: 100px;
+      height: 80vh;
+      width: 15.5vh;
       overflow: auto;
       li {
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
+        width: 15vh;
+        height: 7.5vh;
+        line-height: 7.5vh;
         text-align: center;
         background-color: #fff;
         border-bottom: 0.5px solid gray;
@@ -109,21 +109,21 @@ export default {
       display: flex;
       flex-wrap: wrap;
       align-content: flex-start;
-      width: 275px;
-      height: 523px;
+      width: 40vh;
+      height: 80vh;
       overflow: auto;
       li {
-        width: 80px;
-        height: 120px;
-        margin: 5px;
+        width: 10vh;
+        height: 18vh;
+        margin: 0.7vh;
         img {
           display: block;
-          width: 80px;
-          height: 80px;
+          width: 10vh;
+          height:10vh;
         }
         span {
           display: block;
-          width: 100%;
+          width: 10vh;
           text-align: center;
         }
       }

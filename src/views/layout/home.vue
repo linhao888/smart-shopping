@@ -70,18 +70,26 @@ export default {
 
 .home-body {
   .header {
-    height: 46px;
+    height: 8vh;
     background-color: rgb(158, 204, 222);
     text-align: center;
-    line-height: 46px;
+    line-height: 8vh;
   }
   .swipe {
+    ::v-deep .van-swipe__indicators {
+      bottom: 3vh;
+    }
+    ::v-deep .van-swipe__indicator {
+      height: 1.5vh;
+      width: 1.5vh;
+    }
     .my-swipe .van-swipe-item {
       color: #fff;
       font-size: 20px;
       line-height: 150px;
       text-align: center;
       background-color: #39a9ed;
+
       .swipe-img {
         width: 100%;
         object-fit: cover;
@@ -96,7 +104,7 @@ export default {
       flex-wrap: wrap;
       .nav-item {
         background-color: #fff;
-        font-size: 15px;
+        font-size: 2vh;
         width: 18%;
         margin: 5px 0;
         border-radius: 10px;
@@ -109,11 +117,11 @@ export default {
   .product-title {
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    margin: 1vh 0;
   }
   .bottom-brank {
     width: 100%;
-    height: 100px;
+    height: 15vh;
     text-align: center;
     .bottom-font {
       color: gray;

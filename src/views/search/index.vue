@@ -1,13 +1,7 @@
 <template>
   <div class="search-box">
     <!-- nav区域 -->
-    <van-nav-bar
-      title="搜索"
-      left-text="返回"
-      left-arrow
-      @click-left="$router.go(-1)"
-    />
-
+    <HeadNavVue></HeadNavVue>
     <!-- 搜索框 -->
     <SearchVue @getSearch="getValue"></SearchVue>
 
@@ -27,10 +21,12 @@
 <script>
 import SearchVue from '@/components/Search.vue'
 import { getHistoryList, setHistoryList } from '@/utils/storage'
+import HeadNavVue from '@/components/HeadNav.vue'
 export default {
   name: 'SearchIndex',
   components: {
-    SearchVue
+    SearchVue,
+    HeadNavVue
   },
   data () {
     return {
@@ -85,14 +81,14 @@ export default {
 <style lang="less" scoped>
 .search-box {
   .search-history {
-    margin: 15px 0 5px 0;
+    margin: 3vh 0 1vh 0;
     display: flex;
     justify-content: space-between;
     .left {
-      margin-left: 10px;
+      margin-left: 2vh;
     }
     .right {
-      margin-right: 10px;
+      margin-right: 2vh;
       color: gray;
     }
   }
@@ -101,10 +97,11 @@ export default {
       display: flex;
       flex-wrap: wrap;
       li {
-        padding: 5px 8px;
-        margin: 10px 0 0 10px;
+        cursor: pointer;
+        padding: 1vh 1.5vh;
+        margin: 2vh 0 0 1.5vh;
         background-color: #ddd;
-        border-radius: 8px;
+        border-radius: 2vh;
       }
     }
   }

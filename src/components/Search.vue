@@ -39,26 +39,27 @@ export default {
   src: url("@/lib/fonts/iconfont.ttf?t=1727402773992") format("truetype");
 }
 .search {
-    margin: 5px 0;
+    margin: 1vh 0;
     position: relative;
     .iconfont {
       font-family: "iconfont" !important;
-      font-size: 18px;
+      font-size: 3.5vh;
       font-style: normal;
       position: absolute;
-      left: 10px;
-      top: 10px;
+      left: 3vh;
+      top: 2vh;
       color: #5558;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
     input {
       width: 100%;
-      height: 40px;
-      border-radius: 40px;
+      height: 8vh;
+      border-radius: 8vh;
       border: none;
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-      padding: 0 35px;
+      padding: 0 8vh;
+      font-size: 3vh;
     }
   }
 </style>

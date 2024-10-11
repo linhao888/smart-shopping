@@ -180,10 +180,10 @@ export default {
 <style lang="less" scoped>
 // 主题 padding
   .header {
-    height: 46px;
+    height: 8vh;
     background-color: rgb(158, 204, 222);
     text-align: center;
-    line-height: 46px;
+    line-height: 8vh;
   }
 .cart {
   padding-bottom: 100px;
@@ -311,25 +311,26 @@ export default {
   }
 }
 .empty-cart {
-  padding: 80px 30px;
+  padding: 12vh 6vh;
   img {
-    width: 140px;
-    height: 92px;
+    width: 20vh;
+    height: 14vh;
     display: block;
     margin: 0 auto;
   }
   .tips {
     text-align: center;
     color: #666;
-    margin: 30px;
+    margin: 6vh auto;
   }
   .btn {
-    width: 110px;
-    height: 32px;
-    line-height: 32px;
+    width: 16vh;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2vh;
     text-align: center;
     background-color: #fa2c20;
-    border-radius: 16px;
+    border-radius: 2vh;
     color: #fff;
     display: block;
     margin: 0 auto;
