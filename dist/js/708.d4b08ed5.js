@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunksmart_shopping"]=self["webpackChunksmart_shopping"]||[]).push([[708],{9708:function(n,u,t){t.r(u),t.d(u,{default:function(){return p}});var e=function(){var n=this,u=n._self._c;return u("h1",[n._v("404网页不存在")])},s=[],r={name:"NotFoundIndex"},l=r,a=t(1656),o=(0,a.A)(l,e,s,!1,null,null,null),p=o.exports}}]);
+//# sourceMappingURL=708.d4b08ed5.js.map
